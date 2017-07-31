@@ -1,0 +1,10 @@
+---
+applications:
+- name: cybergert-product
+  memory: 1024M
+  buildpack: java_buildpack_offline
+  routes:
+  - route: cybergert-product.apps01.cf.nl.eu.abnamro.com
+  services:
+  - productsql
+  - rabbitbus
